@@ -1,0 +1,122 @@
+/* --- Proprietà generali --- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* --- Proprietà header --- */
+header{
+  min-height: 100px;
+}
+ /* --- Logo --- */
+header img{
+  width: 200px;
+  margin: 5px 0 0px;
+  padding-right: 10px;
+  border-right: 1px solid #cecece;
+}
+header nav{
+  margin-top: 20px;
+}
+  /* --- Proprietà lista barra nav --- */
+header ul > li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 15px;
+}
+header li a{
+  font-size: 20px;
+  color: grey;
+  text-decoration: none;
+}
+  /* --- Uso header.container per evitare conflitti di importanza sul margine inferiore (avrei pututo usare anche "header, main, footer" al posto di .container oppure !important nella proprietà) --- */
+header.container, .jumbo{
+    margin-bottom: 30px;
+}
+
+/* --- Proprietà main --- */
+.jumbo{
+  height: 500px;
+  border-radius: 20px;
+  color: white;
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+  /* --- Sezione testo nel jumbo --- */
+.jumbo .sezione-text{
+  position: absolute;
+  z-index: 100;
+  bottom: 10%;
+  left: 5%;
+}
+  /* --- Testo principale --- */
+.jumbo .top-text{
+  font-size: calc(18px + 1vw);
+  bottom: 0;
+  font-weight: 400;
+}
+  /* --- Testo secondario --- */
+.jumbo .down-text{
+  font-size: calc(5px + 1vw);
+  font-weight: 300;
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.3;
+  border-radius: 20px;
+}
+  /* --- Riga contenente i float element */
+.row{
+  min-height: 30px;
+  background-color: dodgerblue;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+  /* --- Proprietà Row e specifiche h1 ---  */
+
+.row > h1{
+  /* min-height: 70px; */
+  font-size: calc(25px + 1vw);
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+  /* --- Elementi float --- */
+.aside, .center{
+  float: left;
+  min-height: 300px;
+}
+.aside{
+  width: 20%;
+}
+.center{
+  width: 56%;
+  margin: 0 2%;
+}
+
+/*  --- Proprietà footer --- */
+footer{
+  min-height: 50px;
+  background-color: purple;
+}
