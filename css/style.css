@@ -125,6 +125,11 @@ margin: 20px 0 50px;
   border-radius: 20px;
   position: relative;
 }
+.immagine-sfondo:hover .overlay, .jumbo:hover .overlay{
+  opacity: 0.1;
+  transition: opacity 0.7s;
+}
+
   /* --- Proprità specifiche img sfondo --- */
 .immagine-sfondo#sx{
     background-image: url("../img/img-1.jpg");

@@ -1,0 +1,12 @@
+.center{
+  width: 48%;
+}
+.center:first-child{
+  margin-left: 0;
+}
+.center:last-child{
+  margin-right: 0;
+}
+.immagine-sfondo#centr1{
+  background-image: url("../img/img-5.jpg");
+}
