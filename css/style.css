@@ -87,25 +87,25 @@ header.container, .jumbo{
   opacity: 0.3;
   border-radius: 20px;
 }
-  /* --- Riga contenente i float element */
-.row{
-  min-height: 30px;
-  background-color: dodgerblue;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
-}
-  /* --- Proprietà Row e specifiche h1 ---  */
 
-.row > h1{
-  /* min-height: 70px; */
+/* --- Titolo Row ---  */
+.titolo{
   font-size: calc(25px + 1vw);
   font-family: sans-serif;
-  margin-bottom: 20px;
+}
+.sottotitolo{
+  font-size: calc(8px + 1vw);
+  font-weight: normal;
+  color: grey;
+}
+/* --- Riga contenente i float element */
+.row{
+min-height: 30px;
+margin: 20px 0;
 }
   /* --- Elementi float --- */
 .aside, .center{
   float: left;
-  min-height: 300px;
 }
 .aside{
   width: 20%;
@@ -114,9 +114,34 @@ header.container, .jumbo{
   width: 56%;
   margin: 0 2%;
 }
+  /* --- Badge img sfondo --- */
+  /* --- Proprità generiche img sfondo --- */
+.immagine-sfondo{
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 220px;
+  border-radius: 20px;
+  position: relative;
+}
+  /* --- Proprità specifiche img sfondo --- */
+.immagine-sfondo#sx{
+    background-image: url("../img/img-1.jpg");
+}
+.immagine-sfondo#centr{
+    background-image: url("../img/banner-2.jpg");
+}
+.immagine-sfondo#dx{
+    background-image: url("../img/img-3.jpg");
+}
 
 /*  --- Proprietà footer --- */
 footer{
-  min-height: 50px;
-  background-color: purple;
+  height: 50px;
+  font-size: 15px;
+  text-align: center;
+}
+footer > i{
+  color: black;
+  vertical-align: middle;
 }
