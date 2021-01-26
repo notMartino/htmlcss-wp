@@ -68,6 +68,7 @@ header.container, .jumbo{
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  overflow: hidden;
 }
   /* --- Sezione testo nel jumbo --- */
 .jumbo .sezione-text{
@@ -75,6 +76,7 @@ header.container, .jumbo{
   z-index: 100;
   bottom: 10%;
   left: 5%;
+  width: 40%;
 }
   /* --- Testo principale --- */
 .jumbo .top-text{
