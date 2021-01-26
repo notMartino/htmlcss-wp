@@ -16,6 +16,17 @@ body{
   display: table;
   clear: both;
 }
+.overlay{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.3;
+  border-radius: 20px;
+}
 
 /* --- Proprietà header --- */
 header{
@@ -24,7 +35,7 @@ header{
  /* --- Logo --- */
 header img{
   width: 200px;
-  margin: 5px 0 0px;
+  margin-top: 5px;
   padding-right: 10px;
   border-right: 1px solid #cecece;
 }
@@ -67,45 +78,35 @@ header.container, .jumbo{
 }
   /* --- Testo principale --- */
 .jumbo .top-text{
-  font-size: calc(18px + 1vw);
-  bottom: 0;
+  font-size: calc(20px + 0.8vw);
   font-weight: 400;
 }
   /* --- Testo secondario --- */
 .jumbo .down-text{
-  font-size: calc(5px + 1vw);
+  font-size: calc(15px + 0.2vw);
   font-weight: 300;
-}
-.overlay{
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 50;
-  top: 0;
-  left: 0;
-  background-color: black;
-  opacity: 0.3;
-  border-radius: 20px;
 }
 
 /* --- Titolo Row ---  */
 .titolo{
-  font-size: calc(25px + 1vw);
+  font-size: calc(25px + 0.8vw);
   font-family: sans-serif;
 }
 .sottotitolo{
-  font-size: calc(8px + 1vw);
+  font-size: calc(15px + 0.3vw);
   font-weight: normal;
   color: grey;
 }
+
 /* --- Riga contenente i float element */
 .row{
 min-height: 30px;
-margin: 20px 0;
+margin: 20px 0 50px;
 }
   /* --- Elementi float --- */
 .aside, .center{
   float: left;
+  word-wrap: break-word;
 }
 .aside{
   width: 20%;
@@ -135,13 +136,26 @@ margin: 20px 0;
     background-image: url("../img/img-3.jpg");
 }
 
+  /* Titoletto colonna e testo */
+.aside > .sottotitolo, .center > .sottotitolo{
+  color: black;
+  font-size: 15px;
+  margin: 12px 0;
+}
+.aside > .testo, .center > .testo{
+  color: grey;
+  font-size: 14px;
+}
+
 /*  --- Proprietà footer --- */
 footer{
   height: 50px;
   font-size: 15px;
   text-align: center;
+  text-decoration: overline;
+  text-decoration-style: wavy;
 }
 footer > i{
-  color: black;
+  color: red;
   vertical-align: middle;
 }
